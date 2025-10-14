@@ -1,0 +1,109 @@
+/* 🔧 Configuração Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f6fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🟦 Cabeçalho */
+header {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* 🔵 Hero */
+.hero {
+  text-align: center;
+  background-color: #e8f0ff;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #003c8f;
+  margin-bottom: 10px;
+}
+
+/* 🧱 Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* 💬 Faixa de Destaque */
+.cta {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+/* ⚫ Rodapé */
+footer {
+  background-color: #002a6e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
